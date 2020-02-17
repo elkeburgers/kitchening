@@ -1,0 +1,60 @@
+body{
+    background-image: url(../images/bg-body.png);
+}
+a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* header */
+
+header{
+    height: 30vh;
+}
+#logo{
+    height: 40PX;
+    width: 50PX;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+.nav{
+    background-color: rgb(114, 107, 121);
+    color: #ffffff;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+/* banner */
+
+ #banner{
+    width: 100%;
+    margin-top: 3%;
+    justify-content: center;
+} 
+
+/* produtos */
+
+#box{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+/* footer */
+.rodape{
+    display: flex;
+    background-color: rgb(195, 53, 53);
+    padding: 50px;   
+    justify-content: center;
+    align-items: center;
+    width: 1180px;
+    height: 100px;   
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;   
+    margin-top: 2%;
+}
+.rodape a{
+    color: #ffffff;
+    font-size: 0.8em;
+    padding: 5px;
+}
