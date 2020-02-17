@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background: url(../images/bg-body.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+a{
+    list-style-type: none;
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+}
+
+/* header - inicio */
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+.logo{
+    background-image: url(../images/logo.jpg);
+    width: 14vw;
+    height: 24vh;
+    border: 1px solid black;
+    border-radius: 60%;
+    background-position: center;
+    background-size: cover;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+header nav{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    padding: 0 5% 0 5%;
+}
+header nav li{
+    display: flex;
+    background:rgb(130, 121, 121);
+    color: #ffffff;
+    width: 12vw;
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header - fim */
+/* footer -inicio */
+
+.rodape{
+    display: flex;
+    background-color: rgb(195, 53, 53);
+    padding: 50px;   
+    justify-content: center;
+    align-items: center;
+    width: 1180px;
+    height: 100px;   
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;   
+    margin-top: 2%;
+}
+.rodape a{
+    color: #ffffff;
+    font-size: 0.8em;
+ /*   border-right: 1px solid  #ffffff; */
+    padding: 5px;
+}
+
+/* #link-contato{
+    border-right: none;
+}  */
+
+/* footer - fim */
+/* index - main - inicio */
+
+main{
+    display: flex;
+    width: 1180px;
+    flex-direction: column;
+}
+.banner{
+    display: flex;
+    background-image: url(../images/img-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 1180px;
+    height: 400px;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.section-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+.box-conteudo{
+    width: 390px;
+}
+.box-conteudo h1{
+    font-size: 16px;
+    padding-top: 2%;
+}
+.box-conteudo p{
+    font-size: 0.9em;
+    padding-top: 2%;
+}
+.produto{
+    display: flex;
+    width: 380px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-self: center;
+}
+#produto_1{
+    background-image: url(../images/img-pdto-1.jpg);
+}
+#produto_2{
+    background-image: url(../images/img-pdto-2.jpg);
+}
+#produto_3{
+    background-image: url(../images/img-pdto-3.jpg);
+}
+#produto_4{
+    background-image: url(../images/img-pdto-2.jpg);
+}
+#produto_5{
+    background-image: url(../images/img-pdto-3.jpg);
+}
+#produto_6{
+    background-image: url(../images/img-pdto-1.jpg);
+}
+.button{
+    color: #ffffff;
+    background: rgb(130, 121, 121);
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    margin-top: 3%;
+}
+.ampliar-foto{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: rgb(73, 71, 71);
+    opacity: 0.6;
+    width: 100%;
+    height: 30px;
+}
+
+
+/* index - main - fim */
+/* responsividade */
+
+@media (max-width:560px){
+    header{
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 3%;
+    }
+    .logo{
+        width: 44vw;
+        height: 20vh;            
+    }
+    header nav{
+        display: none
+    }
+    .rodape{
+        padding: 5vw;   
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 98vw;
+        height: 20vh;   
+    }
+    .rodape a{
+        font-size: 1em;
+    }
+    main{
+        width: 100vw;
+    }
+    .banner{
+        display: none;
+    }
+    .section-box{
+    width: 100vw;
+    margin-top: 2%;
+    }
+    .box{
+        width: 90vw;
+    }
+    .box-conteudo{
+        width: 95vw;
+        margin-left: 2%;
+    }
+}
+
+
+
